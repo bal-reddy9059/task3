@@ -1,0 +1,101 @@
+.orders {
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.orders-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.order-block {
+  margin-bottom: 20px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.order-details {
+  flex: 1;
+  margin-left: 15px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.order-name {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.order-meta {
+  font-size: 14px;
+  color: #333;
+}
+
+.order-date {
+  font-size: 13px;
+  color: white; /* ✅ White text for date */
+}
+
+.order-status {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.dot.red {
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.track-order {
+  border: 1px solid #ccc;
+  background: transparent;
+  width: 140px;
+  height: 32px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: 0.2s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.track-order:hover {
+  background-color: green;     /* ✅ Green on hover */
+  color: white;                /* ✅ White text on hover */
+  border-color: green;         /* Optional: match border with background */
+}

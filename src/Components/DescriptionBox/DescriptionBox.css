@@ -1,0 +1,74 @@
+/* Container */
+.descriptionbox {
+  width: 100%;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 30px 25px;
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Top Navigator */
+.descriptionbox-navigator {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.descriptionbox-nav-box {
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: #6c5ce7;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.descriptionbox-nav-box:hover {
+  color: #4834d4;
+}
+
+.descriptionbox-nav-box::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #6c5ce7;
+  transition: width 0.3s ease;
+}
+
+.descriptionbox-nav-box:hover::after,
+.descriptionbox-nav-box.active::after {
+  width: 100%;
+}
+
+.descriptionbox-nav-box.fade {
+  color: #aaa;
+}
+
+/* Description Text */
+.descriptionbox-description p {
+  color: #2d3436;
+  font-size: 15.5px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 768px) {
+  .descriptionbox {
+    padding: 20px;
+  }
+
+  .descriptionbox-nav-box {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .descriptionbox-description p {
+    font-size: 14px;
+  }
+}

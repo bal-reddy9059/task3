@@ -1,0 +1,113 @@
+/* 💫 Page container with 5-color dynamic gradient */
+.shop-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  /* 🖌️ 5-color animated background */
+  background: linear-gradient(135deg, #e0f7fa, #d1c4e9, #f8bbd0, #c8e6c9, #fff9c4);
+  background-size: 800% 800%;
+  animation: gradientShift 20s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 📦 Sorting bar */
+.shopcategory-indexSort {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto 1.5rem auto;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.shopcategory-indexSort p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.shopcategory-sort {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #bbdefb;
+  padding: 0.6rem 1.3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shopcategory-sort:hover {
+  background-color: #90caf9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.shopcategory-sort img {
+  width: 18px;
+  margin-left: 10px;
+}
+
+/* 🖼️ Product grid */
+.shopcategory-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem; /* ✅ more space between cards */
+  width: 100%;
+  max-width: 1300px;
+  padding: 2rem 3rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.shopcategory-products .item-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shopcategory-products .item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* 🖼️ Product image styling */
+.item-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px; /* ✅ reduced from 12/16 to 6 */
+  margin-bottom: 1rem;
+}
+
+/* 📢 Optional bottom footer */
+.shop-category-bottom {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 2.5rem;
+  background: linear-gradient(to right, #9acaff, #d4e9ff);
+  border-top: 2px solid #b0cde0;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  color: #2a2a2a;
+  font-size: 1.15rem;
+}

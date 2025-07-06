@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+.offers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #f8b195, #f67280);
+  padding: 60px 40px;
+  /* border-radius: 28px; <-- Removed */
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
+  flex-wrap: wrap;
+  /* margin: 40px 20px; <-- Removed to fit top and bottom */
+  width: 100%;
+  min-height: 100vh; /* Fills full screen height */
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.offers-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.offers-left h1 {
+  font-size: 38px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.offers-left p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.offers-button {
+  padding: 12px 28px;
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offers-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(192, 108, 132, 0.4);
+}
+
+.offers-right {
+  flex: 1;
+  text-align: center;
+  min-width: 280px;
+}
+
+.offers-right img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  animation: float 4s ease-in-out infinite;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .offers {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .offers-left,
+  .offers-right {
+    margin: 20px 0;
+  }
+}
