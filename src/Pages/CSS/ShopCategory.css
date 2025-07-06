@@ -1,4 +1,4 @@
-/* 💫 Page container with 5-color dynamic gradient */
+
 .shop-category {
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   width: 100%;
   box-sizing: border-box;
 
-  /* 🖌️ 5-color animated background */
+  
   background: linear-gradient(135deg, #e0f7fa, #d1c4e9, #f8bbd0, #c8e6c9, #fff9c4);
   background-size: 800% 800%;
   animation: gradientShift 20s ease infinite;
@@ -21,7 +21,8 @@
   100% { background-position: 0% 50%; }
 }
 
-/* 📦 Sorting bar */
+
+
 .shopcategory-indexSort {
   width: 100%;
   max-width: 1280px;
@@ -63,11 +64,11 @@
   margin-left: 10px;
 }
 
-/* 🖼️ Product grid */
+
 .shopcategory-products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2.5rem; /* ✅ more space between cards */
+  gap: 2.5rem; 
   width: 100%;
   max-width: 1300px;
   padding: 2rem 3rem;
@@ -89,7 +90,7 @@
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* 🖼️ Product image styling */
+
 .item-card img {
   width: 100%;
   height: 300px;
@@ -98,7 +99,7 @@
   margin-bottom: 1rem;
 }
 
-/* 📢 Optional bottom footer */
+
 .shop-category-bottom {
   margin-top: 2rem;
   width: 100%;
